@@ -84,21 +84,25 @@ function openCash() {
     }
 }
 
-/* constId = songId */
-function openBuySong(menuId, prodSclasCode, price, contsId, tabType, paymtAmt) {
+function openBuySong(constId) {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
-    var buyActUrl;
-
-    // tabType에 따라 URL을 다르게 설정
-    if (tabType === 'BUYFLACSONG') {
-        buyActUrl = '&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1';
-    } else if (tabType === 'BUYSONG') {
-        buyActUrl = '&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1'; 
-    }
-
     if (isIOS) {
-        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${prodSclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tabType}&menuId=${menuId}&paymtAmt=${paymtAmt}&downType=&prodId=&retUrl=&buyActUrl=${encodeURIComponent(buyActUrl)}`;
+        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=1000000386&paymtAmt=700&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
         location.href = url;
+        
+    } else {
+        $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
+        $('#mobilePop').addClass('show');
+        $('body').css('overflow', 'hidden');
+    }
+}
+
+function openBuyFlac(constId) {
+    var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
+    if (isIOS) {
+        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=FG1106&prodSclasCode=FG1106&byCodecTypeCode=AG0113&price=1000&contsType=3C0001&tab=BUYFLACSONG&menuId=1000002721&paymtAmt=1000&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
+        location.href = url;
+
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
         $('#mobilePop').addClass('show');
