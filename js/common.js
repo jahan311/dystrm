@@ -87,7 +87,7 @@ function openCash() {
 function openBuySong() {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
-        location.href = "melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=37860725&byContsId=37860725&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=26020101&paymtAmt=700&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS40&memberKey=1";
+        location.href = "melonapp://webview?url=https://m2.melon.com/cm/download/song/listView.htm?formName=frm_searchArtist&byContsId=38055116&contsType=3C0001&paramsName=&buyType=0&menuId=26020101";
         
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
