@@ -420,6 +420,7 @@ header .inner .mo-nav ul li a.active {
   font-weight: 700;
   font-size: 1.6rem;
   word-break: keep-all;
+  color: #1f1f1f;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }

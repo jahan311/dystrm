@@ -84,10 +84,10 @@ function openCash() {
     }
 }
 
-function openBuySong(menuId, prodSclasCode, price, contsId) { 
+function openBuySong(tab, menuId, prodSclasCode, price, contsId) { 
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
-        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${prodSclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=BUYSONG&menuId=${menuId}&paymtAmt=${price}&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
+        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${prodSclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tab}&menuId=${menuId}&paymtAmt=${price}&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
         location.href = url;
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
