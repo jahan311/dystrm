@@ -87,8 +87,7 @@ function openCash() {
 function openBuySong() {
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if (isMobile) {
-        location.href = "melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=byContsId&contsId=37860725&byContsId=37860725&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=31030101&paymtAmt=700&prodId=10089&retUrl=https%3A%2F%2Fwww.melon.com%2Fmymusic%2Fmain%2Fmymusicmain_list.htm%3FmemberKey%3D43244851&buyActUrl=https%3A%2F%2Fwww.melon.com%2Fcm%2Fdownload%2Fsong%2FuseProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1";
-        
+        location.href = "melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=byContsId&contsId=37860725&byContsId=37860725&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=31030101&paymtAmt=700&prodId=10089&retUrl=https%3A%2F%2Fwww.melon.com%2Fmymusic%2Fmain%2Fmymusicmain_list.htm%3FmemberKey%3D1&buyActUrl=https%3A%2F%2Fwww.melon.com%2Fcm%2Fdownload%2Fsong%2FuseProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1&paymentMethod=KI0002";
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
         $('#mobilePop').addClass('show');
