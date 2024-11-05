@@ -87,7 +87,7 @@ function openCash() {
 function openBuySong() {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
-        location.href = "melonapp://webview?url=https://m2.melon.com/cm/download/song/listView.htm?formName=frm_searchArtist&byContsId=38055116&contsType=3C0001&paramsName=&buyType=0&menuId=26020101";
+        location.href = "https://www.melon.com/cm/download/song/listView.htm?formName=frm_searchArtist&byContsId=38055116&contsType=3C0001&paramsName=&buyType=0&menuId=26020101";
         
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
