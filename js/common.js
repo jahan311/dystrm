@@ -84,7 +84,7 @@ function openCash() {
     }
 }
 
-function openBuySong(constId) {
+function openBuySong(contsId) {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
         var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=1000000386&paymtAmt=700&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
@@ -97,7 +97,7 @@ function openBuySong(constId) {
     }
 }
 
-function openBuyFlac(constId) {
+function openBuyFlac(contsId) {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
         var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=FG1106&prodSclasCode=FG1106&byCodecTypeCode=AG0113&price=1000&contsType=3C0001&tab=BUYFLACSONG&menuId=1000002721&paymtAmt=1000&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
