@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도영 스트리밍</title>
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta property="og:url" content="https://dystrm.kr/">
+    <meta property="og:title" content="NCT도영 스트리밍">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dystrm.github.io/images/meta.png">
+    <meta property="og:description" content="NCT도영 스트리밍 website">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link type="text/css" href="/css/common.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/js/common.js"></script>
+    <link type="text/css" href="/material-design-iconic-font/css/material-design-iconic-font.min.css"
+        rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3X63YWSE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6H3X63YWSE');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NNBB6GTQ');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <div class="wrap">
+        <header data-include-path="/header"></header>
+        <div class="contents">
+            <div class="inner">
+                <div class="left">
+                    <div class="music_box">
+                        <div class="cover"></div>
+                        <div class="music_player"></div>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button" class="btn_cash" onclick="openCash()">멜론 캐쉬충전</button>
+                        <button type="button" class="btn_oneclick" onclick="openOneClick()">스트리밍 원클릭</button>
+                    </div>
+                    <div class="small_btn_box">
+                        <a href="https://x.com/DOYOUNG_STREAM" target="_blank" class="btn_twitter">TWITTERD</a>
+                        <a href="https://www.youtube.com/watch?v=jp3UWDtznIs" target="_blank" class="btn_youtube">YOUTUBE</a>
+                    </div>
+                    <div class="copyright">
+                        <p>개발 문의 : <a href="mailto:dystrm.dev@gmail.com">dystrm.dev@gmail.com </a></p>
+                        <p>스트리밍팀: <a href="mailto:doyoungstreamcrew@gmail.com">doyoungstreamcrew@gmail.com </a></p>
+                        <p>Copyright © 2024 Team DOYOUNG STREAM All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="strm_list">
+                        <ul>
+                            <li><p>청춘의 포말 (YOUTH) - The 1st Album</p></li>
+                            <li>
+                                <p>시리도록 눈부신</p>
+                                <div>
+                                    <button type="button" class="btn_flac" onclick="openBuySong('1000002721', 'FG1106', '1000', '37860725')">flac 다운</button>
+                                    <button type="button" class="btn_mp3" onclick="openBuySong('1000000386', 'FG1102', '700', '37860725')">mp3 다운</button>
+                                    <button type="button" class="btn_present">선물하기</button>
+                                </div>
+                            </li>
+                            <li><p>반딧불 (Little Light)</p></li>
+                            <li><p>새봄의 노래 (Beginning)</p></li>
+                            <li><p>나의 바다에게 (From Little Wave)</p></li>
+                            <li><p>Time Machine (Feat. 태연, 마크)</p></li>
+                            <li><p>시리도록 눈부신</p></li>
+                            <li><p>반딧불 (Little Light)</p></li>
+                            <li><p>내가 됐으면 해 (Serenade)</p></li>
+                            <li><p>끝에서 다시 (Rewind)</p></li>
+                            <li><p>온기 (Warmth)</p></li>
+                            <li><p>시리도록 눈부신</p></li>
+                            <li><p>반딧불 (Little Light)</p></li>
+                            <li><p>Lost in California</p></li>
+                            <li><p>쉼표 (Rest)</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mo_bottom">
+                    <div class="small_btn_box">
+                        <a href="https://x.com/DOYOUNG_STREAM" target="_blank" class="btn_twitter">TWITTERD</a>
+                        <a href="https://www.youtube.com/watch?v=jp3UWDtznIs" target="_blank" class="btn_youtube">YOUTUBE</a>
+                    </div>
+                    <div class="copyright">
+                        <p>개발 문의 : <a href="mailto:dystrm.dev@gmail.com">dystrm.dev@gmail.com </a></p>
+                        <p>스트리밍팀: <a href="mailto:doyoungstreamcrew@gmail.com">doyoungstreamcrew@gmail.com </a></p>
+                        <p>Copyright © 2024 Team DOYOUNG STREAM All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-include-path="/popup"></div>
+</body>
+
+</html>

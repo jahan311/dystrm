@@ -1,0 +1,189 @@
+@charset 'utf-8';
+
+/* image */
+@mixin image($name, $path: "../images/", $format:"png", $bgXY:center) {
+    background: url("#{$path}#{$name}.#{$format}") no-repeat $bgXY;
+}
+
+@mixin logo($width, $height) {
+    @include image($name:'logo');
+    width: $width;
+    height: $height;
+}
+
+/* icon */
+@mixin icon($name, $path: "../images/icon/", $format:"png", $bgXY:center) {
+    background: url("#{$path}#{$name}.#{$format}") no-repeat $bgXY;
+    background-size: 100%;
+}
+
+@mixin ico_melon($width, $height) {
+    @include icon($name:'ico_melon');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_genie($width, $height) {
+    @include icon($name:'ico_genie');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_flo($width, $height) {
+    @include icon($name:'ico_flo');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_bugs($width, $height) {
+    @include icon($name:'ico_bugs');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_vibe($width, $height) {
+    @include icon($name:'ico_vibe', $format:"jpg");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_youtube_img($width, $height) {
+    @include icon($name:'ico_youtube', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_kakao($width, $height) {
+    @include icon($name:'ico_kakao', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_close($width, $height) {
+    @include icon($name:'ico_close');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_mubeat($width, $height) {
+    @include icon($name:'ico_mubeat', $format:"jpg");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_idolchamp($width, $height) {
+    @include icon($name:'ico_idolchamp', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_startplanet($width, $height) {
+    @include icon($name:'ico_startplanet', $format:"jpg");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_idolplus($width, $height) {
+    @include icon($name:'ico_idolplus', $format:"jpg");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_superstart($width, $height) {
+    @include icon($name:'ico_superstart', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_mnet($width, $height) {
+    @include icon($name:'ico_mnet', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_broadcast($width, $height) {
+    @include icon($name:'ico_broadcast', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_cheering($width, $height) {
+    @include icon($name:'ico_cheering', $format:"png");
+    width: $width;
+    height: $height;
+}
+
+@mixin iconMask ($name, $color, $path: "../images/icon/", $format:"svg") {
+    background-color: $color;
+    mask-image : url("#{$path}#{$name}.#{$format}");
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    font-size: 0;
+}
+
+@mixin ico_music_start($width, $height, $color: auto) {
+    @include iconMask($name:'ico_music_start', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_play($width, $height, $color: auto) {
+    @include iconMask($name:'ico_play', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_present($width, $height, $color: auto) {
+    @include iconMask($name:'ico_present', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_flac($width, $height, $color: auto) {
+    @include iconMask($name:'ico_flac', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_mp3($width, $height, $color: auto) {
+    @include iconMask($name:'ico_mp3', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_music($width, $height, $color: auto) {
+    @include iconMask($name:'ico_music', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_cash($width, $height, $color: auto) {
+    @include iconMask($name:'ico_cash', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_twitter($width, $height, $color: auto) {
+    @include iconMask($name:'ico_twitter', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_youtube($width, $height, $color: auto) {
+    @include iconMask($name:'ico_youtube', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_close($width, $height, $color: auto) {
+    @include iconMask($name:'ico_close', $color : $color );
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_menu($width, $height, $color: auto) {
+    @include iconMask($name:'ico_menu', $color : $color );
+    width: $width;
+    height: $height;
+}
