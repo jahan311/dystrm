@@ -84,10 +84,20 @@ function openCash() {
     }
 }
 
-function openBuySong(tab, menuId, prodSclasCode, price, contsId) { 
+/* constId = songId */
+function openBuySong(menuId, prodSclasCode, price, contsId, tabType, paymtAmt) {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
+    var buyActUrl;
+
+    // tabType에 따라 URL을 다르게 설정
+    if (tabType === 'BUYFLACSONG') {
+        buyActUrl = '/commerce/m/channel/contents/mobileapp/androidchannel_downloadProc.htm';
+    } else if (tabType === 'BUYSONG') {
+        buyActUrl = '/other/path/for/mp3_download_proc.htm'; // MP3에 맞는 경로
+    }
+
     if (isIOS) {
-        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${prodSclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tab}&menuId=${menuId}&paymtAmt=${price}&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
+        var url = `melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${prodSclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tabType}&menuId=${menuId}&paymtAmt=${paymtAmt}&downType=&prodId=&retUrl=&buyActUrl=${encodeURIComponent(buyActUrl)}&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1`;
         location.href = url;
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
