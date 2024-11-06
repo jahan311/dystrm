@@ -114,7 +114,7 @@ function openBuySong(contsId, bySclasCode, prodSclasCode, price, tab, menuId) {
 function openPresent() {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
-        window.open('https://www.melon.com/buy/gift/purchase.htm?sendMemberKey=43244851&sendMsgTitle=&sendMsgCont=.&pocId=AS20&giftProdGubun=1&totBillAmt=&totBillAmtPerRecv=&sendContsCnt=1&contsIds=37860725&prodSclasCodes=FG1102&prodIds=10089&prodamts=700&reptCnt=1&recvUsers=0%7C54946469&sendIp=8.8.8.8&downType=&sendDeviceId=17261027636813070717493&menuId=70010101&repContName=0&pcplayerYn=&httpDomain=http%3A%2F%2Fm2.melon.com&httpsDomain=https%3A%2F%2Fm2.melon.com')
+        window.open('https://www.melon.com/buy/gift/purchase.htm?sendMemberKey=43244851&sendMsgTitle=&sendMsgCont=.&pocId=AS40&giftProdGubun=1&totBillAmt=&totBillAmtPerRecv=&sendContsCnt=1&contsIds=38145736&prodSclasCodes=FG1102&prodIds=10089&prodamts=700&reptCnt=1&recvUsers=0%7C55023443&sendIp=8.8.8.8&downType=&sendDeviceId=001010022899&menuId=1000003C0001&repContName=0&pcplayerYn=&httpDomain=http%3A%2F%2Fm2.melon.com&httpsDomain=https%3A%2F%2Fm2.melon.com')
     }else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
         $('#mobilePop').addClass('show');
