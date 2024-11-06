@@ -95,21 +95,21 @@ function openCash() {
 //     }
 // }
 
-function openBuySong(contsId, bySclasCode, prodSclasCode, price, tab, menuId) {
-    const baseUrl = 'https://m2.melon.com/buy/contents/purchase.htm';
-    let extraParams;
+// function openBuySong(contsId, bySclasCode, prodSclasCode, price, tab, menuId) {
+//     const baseUrl = 'https://m2.melon.com/buy/contents/purchase.htm';
+//     let extraParams;
 
-    // 조건에 따라 extraParams를 다르게 설정
-    if (tab === 'BUYSONG') {
-        extraParams = '&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1';
-    } else {
-        extraParams = '&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1';
-    }
+//     // 조건에 따라 extraParams를 다르게 설정
+//     if (tab === 'BUYSONG') {
+//         extraParams = '&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1';
+//     } else {
+//         extraParams = '&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=1';
+//     }
 
-    const params = `?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${bySclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tab}&menuId=${menuId}&paymtAmt=${price}${extraParams}`;
+//     const params = `?paramsName=contsId&contsId=${contsId}&byContsId=${contsId}&bySclasCode=${bySclasCode}&prodSclasCode=${prodSclasCode}&byCodecTypeCode=AG0113&price=${price}&contsType=3C0001&tab=${tab}&menuId=${menuId}&paymtAmt=${price}${extraParams}`;
 
-    window.open(baseUrl + params);
-}
+//     window.open(baseUrl + params);
+// }
 
 function openPresent() {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
