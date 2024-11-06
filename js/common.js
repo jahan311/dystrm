@@ -85,29 +85,6 @@ function openCash() {
 }
 
 
-// function openBuySong() {
-//     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-//     if (isMobile) {
-//         location.href = "melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=byContsId&contsId=37860725&byContsId=37860725&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=31030101&paymtAmt=700&prodId=10089&retUrl=https%3A%2F%2Fwww.melon.com%2Fmymusic%2Fmain%2Fmymusicmain_list.htm%3FmemberKey%3D43244851&buyActUrl=https%3A%2F%2Fwww.melon.com%2Fcm%2Fdownload%2Fsong%2FuseProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS20&memberKey=43244851";
-//     } else {
-//         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
-//         $('#mobilePop').addClass('show');
-//         $('body').css('overflow', 'hidden');
-//     }
-// }
-
-// function openBuyFlac() {
-//     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
-//     if (isIOS) {
-//         location.href = "melonapp://webview?url=https://m2.melon.com/buy/contents/purchase.htm?paramsName=contsId&contsId=38055116&byContsId=38055116&bySclasCode=FG1106&prodSclasCode=FG1106&byCodecTypeCode=AG0113&price=1000&contsType=3C0001&tab=BUYFLACSONG&menuId=1000002721&paymtAmt=1000&downType=&prodId=&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS40&memberKey=1&formName=byFrm&buyType=0&exceptAll=0";
-//     }else {
-//         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
-//         $('#mobilePop').addClass('show');
-//         $('body').css('overflow', 'hidden');
-//     }
-// }
-
-
 function openOneClick() {
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if (isMobile) {
@@ -125,3 +102,94 @@ function closePop() {
     $('#oneClickPopMo').removeClass('show');
     $('body').css('overflow', 'auto');
 }
+
+// 스밍 원클릭
+
+/* melon */
+function oneMelonPc1() {
+    window.open('https://han.gl/YJF5u');
+}
+
+function oneMelonPc2() {
+    window.open('https://han.gl/kfc4B');
+}
+
+function oneMelonPc3() {
+    window.open('https://han.gl/m3gXI');
+}
+
+function oneMelonPc4() {
+    window.open('https://han.gl/IOSOi');
+}
+
+function oneMelonAnd1() {
+    window.open('https://han.gl/BmN7j');
+}
+
+function oneMelonAnd2() {
+    window.open('https://han.gl/gt02z');
+}
+
+function oneMelonAnd3() {
+    window.open('https://han.gl/yqngX');
+}
+
+function oneMelonAnd4() {
+    window.open('https://han.gl/SYuFf');
+}
+
+function oneMelonIos() {
+    window.open('https://han.gl/ffs8S');
+}
+
+function oneMelonIpad() {
+    window.open('https://han.gl/VImDi');
+}
+
+/* genie */
+function oneGeniePc() {
+    window.open('https://han.gl/xd5ED');
+}
+
+function oneGenieAnd() {
+    window.open('https://han.gl/oXhqx');
+}
+
+function oneGenieIos() {
+    window.open('https://han.gl/DLU7j');
+}
+
+/* bugs */
+function onekBugsPc() {
+    window.open('https://han.gl/RvBO3');
+}
+
+function oneBugsMo() {
+    window.open('https://han.gl/Ibe09');
+}
+
+
+/* vibe */
+function oneVibeMo1() {
+    window.open('https://han.gl/TmUe0');
+}
+
+function oneVibeMo2() {
+    window.open('https://han.gl/W7ZbG');
+}
+
+function oneVibeMo3() {
+    window.open('https://han.gl/B3XVr');
+}
+
+function oneVibeMo4() {
+    window.open('https://han.gl/MiSnd');
+}
+
+function oneFlo() {
+    window.open('https://han.gl/YmR0u');
+}
+
+
+
+
