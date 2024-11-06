@@ -87,14 +87,19 @@ function openCash() {
 function openPresent() {
     var url = "https://www.melon.com/mymusic/messagepresent/mymusicpresent_insert.htm";
     
-    // 모바일 환경을 감지하는 조건
+    // 모바일 환경 감지
     if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        url = url.replace("m2.melon.com", "www.melon.com"); // 모바일 URL로 변경
+        // 모바일 환경에서는 강제로 PC 버전 URL로 변경
+        url = url.replace("m2.melon.com", "www.melon.com");
+        
+        // 새 창에서 PC 버전 열기
+        window.open(url, '_blank');
+    } else {
+        // 모바일 환경이 아닐 경우
+        window.open(url, '_blank');
     }
-    
-    // 새 창으로 URL 열기
-    window.open(url, '_blank'); // '_blank'는 새 창에서 열기
 }
+
 
 
 // function openBuySong() {
