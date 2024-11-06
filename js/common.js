@@ -88,8 +88,8 @@ function openPresent() {
     var url = "https://www.melon.com/mymusic/messagepresent/mymusicpresent_insert.htm";
     
     // 모바일 환경을 감지하는 조건
-    if (window.innerWidth <= 800) {  // 화면 너비가 800px 이하일 경우 (모바일 환경)
-        url = url.replace("www.melon.com", "m2.melon.com"); // 모바일 URL로 변경
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        url = url.replace("m2.melon.com", "www.melon.com"); // 모바일 URL로 변경
     }
     
     // 새 창으로 URL 열기
