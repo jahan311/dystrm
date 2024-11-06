@@ -683,6 +683,22 @@ header .inner .mo-nav ul li a.active {
   width: 2rem;
   height: 2rem;
 }
+.wrap .contents .right .strm_list ul li:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 .wrap .contents .right .strm_list ul li:first-of-type::before {
   content: none;
 }
@@ -690,6 +706,12 @@ header .inner .mo-nav ul li a.active {
   font-family: "Pretendard Variable";
   font-weight: 700;
   font-size: 2.5rem;
+}
+.wrap .contents .right .strm_list ul li:first-of-type span {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 1.4rem;
+  word-break: keep-all;
 }
 .wrap .contents .right .strm_list ul li:nth-of-type(2) {
   background: #1f1f1f;
