@@ -84,30 +84,6 @@ function openCash() {
     }
 }
 
-function openPresent() {
-    var url = "https://www.melon.com/mymusic/messagepresent/mymusicpresent_insert.htm";
-    
-    // 모바일 환경 감지
-    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        // 모바일 환경에서는 강제로 PC 버전 URL로 변경
-        url = url.replace("m2.melon.com", "www.melon.com");
-    }
-    
-    // XMLHttpRequest로 요청을 보내며, User-Agent 헤더를 설정
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");  // PC 버전의 User-Agent로 설정
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            // 요청이 성공했을 때 새 창으로 URL을 엶
-            window.open(url, '_blank');
-        }
-    };
-    xhr.send();
-}
-
-
-
 
 // function openBuySong() {
 //     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
