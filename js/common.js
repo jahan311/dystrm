@@ -125,7 +125,7 @@ function openPresent() {
 function openBuySong() {
     var isIOS = /iPhone|iPad/i.test(navigator.userAgent);
     if (isIOS) {
-        window.open('https://m2.melon.com/buy/contents/purchase.htm?paramsName=byContsId&contsId=37436303&byContsId=37436303&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=1000000386&paymtAmt=700&prodId=10089&retUrl=&buyActUrl=%2Fcommerce%2Fm%2Fchannel%2Fcontents%2Fmobileapp%2Fandroidchannel_downloadProc.htm&viewType=&isNineteenContentExcept=N&pocId=AS40&memberKey=1')
+        window.open('https://m2.melon.com/buy/contents/purchase.htm?paramsName=byContsId&contsId=37436303&byContsId=37436303&bySclasCode=FG1102&prodSclasCode=FG1102&byCodecTypeCode=AG0113&price=700&contsType=3C0001&tab=BUYSONG&menuId=1000000386&paymtAmt=700&prodId=10089&pocId=AS40&memberKey=1&buyUseType=song&buyProdId=10089&buyProdName=개별곡&buyPaymtAmt=700&buyTotPaymtAmt=700&buyTotPaymtDcAmt=0&buyTotLastPaymtAmt=700&formname=byFrm&isMobileTokenValidCheck=true&isAndroidApp=true&channelCode=android2&callbytab=BUYSONG&httpDomain=http://m2.melon.com&httpsDomain=https://m2.melon.com')
     } else {
         $('#mobilePop .popup-box .text').text('아이폰 전용 기능입니다.');
         $('#mobilePop').addClass('show');
