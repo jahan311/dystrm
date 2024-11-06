@@ -166,6 +166,7 @@ header {
                     height: 6rem;
                     @include ftBold;
                     @include ftSize(large);
+                    color: $black;
                     transition: all 0.3s ease-in;
                     &:hover {
                         background: $white;
@@ -310,12 +311,17 @@ header {
                         }
                         
                         &:first-of-type {
+                            @include flex(baseline, flex-start, 10px);
                             &::before {
                                 content: none;
                             }
                             p {
                                 @include ftBold;
                                 @include ftSize(2.5rem);
+                            }
+                            span {
+                                @include ftBold;
+                                @include ftSize(regular);
                             }
                         }
 
