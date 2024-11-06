@@ -84,6 +84,19 @@ function openCash() {
     }
 }
 
+function openPresent() {
+    var url = "https://www.melon.com/mymusic/messagepresent/mymusicpresent_insert.htm";
+    
+    // 모바일 환경을 감지하는 조건
+    if (window.innerWidth <= 800) {  // 화면 너비가 800px 이하일 경우 (모바일 환경)
+        url = url.replace("www.melon.com", "m2.melon.com"); // 모바일 URL로 변경
+    }
+    
+    // 새 창으로 URL 열기
+    window.open(url, '_blank'); // '_blank'는 새 창에서 열기
+}
+
+
 // function openBuySong() {
 //     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 //     if (isMobile) {
